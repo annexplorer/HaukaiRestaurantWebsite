@@ -34,7 +34,7 @@ nav ul li {
 nav ul li a {
 	text-decoration: none; color: #fff; background: #006666;
 	height: 40px; width: 120px; line-height: 40px;
-	display: block; text-align: center; border-radius: 3px 3px 3px 3px;
+	display: inline-block; text-align: center; border-radius: 3px;
 }
 nav ul li ul {
 	position: absolute;
