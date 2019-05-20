@@ -4,7 +4,7 @@
 <head>
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Haukai Restaurant</title>
 </head>
 <!-- This is the Home page display. Header, logo, navigation, banner,-->
@@ -13,7 +13,13 @@
 		<div class="header">
 			<div class="logo">
 				<a href="index.html"><img src="images/logosmaller.png" alt="logo" max-width="100%"></a>
-			</div>	
+			</div>
+			<label for="nav-toggle" class="nav-toggle-label"> <!--This is for the hamberger menu for mobile device-->
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>		
+			</label>
+				<input type="checkbox" id="nav-toggle" class="nav-toggle"/> <!--End of hamburger menu-->
 			<nav>
 				<ul>
 					<li><a href="index.html">home</a></li>

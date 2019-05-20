@@ -48,6 +48,44 @@ nav ul li:hover ul {
 nav ul li a:hover {
 	background-color: #e55300;
 } 
+.nav-toggle {
+	display: none;
+}
+/*MEDIA QUERY*/
+@media only screen and (max-width:600px) {
+	nav {
+		display: none;
+	}
+	.nav-toggle-label {
+		float: right;
+		margin-top: 25px;
+		margin-right: 30px;
+		cursor: pointer;
+	}
+	#nav-toggle:checked ~ nav {
+		display: block;
+		cursor: pointer;
+		position: fixed;
+		margin: 30px 0 0 120px;
+	}
+	.nav-toggle-label div,
+	.nav-toggle-label div::before,
+	.nav-toggle-label div::after {
+		display: block;
+		background-color: #006666;
+		height: 2.5px;
+		width: 2.5em;
+		border-radius: 2px;
+		position: relative;
+	}
+	.line1 {
+		bottom: 3px;
+	}
+	.line2 {
+		top: 11px;
+	}
+	}
+
 
 /*End of Navigation menu*/
 
