@@ -454,7 +454,7 @@ body {
 		text-align: center;
 	}
 	.footernav li {
-		list-style-type: none; display: inline-block;  margin-right: 20px; margin-top: 15px;
+		list-style-type: none; display: inline-block;  margin-right: 20px; margin-top: 10px;
 	}
 	.footernav li a {
 		text-decoration: none; text-transform: uppercase; color: #ccccff;
@@ -463,7 +463,7 @@ body {
 		color: #fff;
 	}
 	.copyright-footer {
-		color: #ccccff; padding-top: 10px;
+		color: #ccccff; padding-top: 15px;
 	}
 	@media only screen and (max-width:800px) {
 	 .footernav li {
