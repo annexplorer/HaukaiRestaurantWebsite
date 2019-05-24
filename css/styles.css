@@ -50,6 +50,9 @@ body {
 	.nav-toggle {
 		display: none;
 	}
+	#nav-toggle {
+		display: none;
+	}
 	
 	/*Style for responsive navigation hamburger menu*/
 	@media only screen and (max-width:800px) {
@@ -59,33 +62,18 @@ body {
 	nav {
 		display: none;
 	}
-	.nav-toggle-label {
+	.nav-toggle {
+		display: block;
 		float: right;
-		margin-top: 25px;
-		margin-right: 30px;
+		margin-top: 30px;
+		margin-right: 50px;
 		cursor: pointer;
 	}
 	#nav-toggle:checked ~ nav {
 		display: block;
 		cursor: pointer;
 		position: fixed;
-		margin: 30px 0 0 180px;
-	}
-	.nav-toggle-label div,
-	.nav-toggle-label div::before,
-	.nav-toggle-label div::after {
-		display: block;
-		background-color: #006666;
-		height: 2.5px;
-		width: 2.5em;
-		border-radius: 2px;
-		position: relative;
-	}
-	.line1 {
-		bottom: 3px;
-	}
-	.line2 {
-		top: 11px;
+		margin: 50px 0 0 180px;
 	}
 	nav ul li a {
 		display: block;
