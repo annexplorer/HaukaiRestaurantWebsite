@@ -144,7 +144,7 @@ body {
 	
 	/*Style for About page*/
 	.aboutheading {
-		max-width: 100%; max-height: 100%; overflow: hidden;
+		max-width: 100%; height: auto; margin-bottom: 30px; overflow: hidden;
 	}
 	.banner-about {
 		max-width: 100%; width: 1519px; height: auto;
@@ -156,7 +156,7 @@ body {
 		padding-left: 50px; padding-right: 80px;
 	}
 	/*Style for Appetizer menu*/
-	.appetizerbanner { 
+	.banner-appetizer { 
 		max-width: 100%; width: 1519px; height: auto;
 	}
 	.menuappetizer {
@@ -448,7 +448,7 @@ body {
 	
 	/*Style for footer*/
 	footer {
-		max-height: 100%; max-width: 100%; height: 90px; background-color: #333;
+	max-width: 100%; height: auto; padding: 2px; background-color: #333;
 	}	
 	.footernav {
 		text-align: center;
