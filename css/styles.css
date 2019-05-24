@@ -2,9 +2,10 @@
 body {
 	margin: 0;
 	font-family: 'Work Sans', sans-serif;
-	font-weight: 400; color: #292929;
+	font-size: 15px; color: #292929;
 	max-height: 100%;
 	}
+	/*Style headings*/	
 	h1, h2, h3 {
 		color: #000;
 	}
@@ -22,10 +23,9 @@ body {
 		margin: 0 auto; 
 	}
 	
-	/* Style the main top navigation bar */
+	/* Style the main top navigation menu */
 	nav {
-		float: right;
-		position:relative;z-index: 99;
+		float: right; position:relative; z-index: 99; margin-right: 70px;
 	}
 	nav ul li {
 		list-style-type: none; text-transform: uppercase; padding-top: 5px;
@@ -45,14 +45,17 @@ body {
 		margin-right: -10;
 	}
 	nav ul li a:hover {
-		background-color: #e55300;
+		background-color: #e55300; color: #2b2b2b; transition: all .6s;
 	}
 	.nav-toggle {
 		display: none;
 	}
 	
-	
-	@media only screen and (max-width:550px) {
+	/*Style for responsive navigation hamburger menu*/
+	@media only screen and (max-width:800px) {
+	body {
+		font-size: 17px;
+	}
 	nav {
 		display: none;
 	}
@@ -66,7 +69,7 @@ body {
 		display: block;
 		cursor: pointer;
 		position: fixed;
-		margin: 30px 0 0 120px;
+		margin: 30px 0 0 180px;
 	}
 	.nav-toggle-label div,
 	.nav-toggle-label div::before,
@@ -84,11 +87,14 @@ body {
 	.line2 {
 		top: 11px;
 	}
-	}
+	nav ul li a {
+		display: block;
+
+		}
+	} 	/*End of Navigation menu*/
 	
-	/*End of Navigation menu*/
-	
-	
+
+	/*Style for banner*/	
 	.banner-img {
 		padding: 0px; max-width: 100%;
 		height: auto; position: relative;
@@ -105,6 +111,7 @@ body {
 	.welcome {
 		text-align: center;
 	}
+	/*Style for Featured Menu at home page*/
 	.featuredtable {
 		padding-left: 20px;  max-width: 100%; height: 370px;
 	}
@@ -112,97 +119,85 @@ body {
 		text-align: center; text-transform: uppercase; margin-top: 45px;
 	}
 	.featcontainer {
-		text-align: center;
+		text-align: center; max-width: 100%; height: auto;
 	}
 	.homefeatappetizerpic {
 		background-color: #ff9f00; height: 285px; width: 250px; display: inline-block;
-		margin-right: 60px; border-radius: 3px;
+		margin-right: 60px; margin-bottom: 10px; max-width: 100%; height: auto;
 	}
 	.homefeatmain {
 		background-color: #ff9f00; height: 285px; width: 250px;  display: inline-block;
-		margin-right: 60px;
+		margin-right: 60px; margin-bottom: 10px; max-width: 100%; height: auto;
 	}
 	.homefeatdessert {
 		background-color: #ff9f00; height: 285px; width: 250px; display: inline-block;
-		vertical-align: top; margin-right: 60px;
+		vertical-align: top; margin-right: 60px; margin-bottom: 10px; max-width: 100%;
 	}
 	.homefeatmain2 {
 		background-color: #ff9f00; height: 285px; width: 250px; display: inline-block;
+		margin-bottom: 10px; margin-right: 60px; max-width: 100%; height: auto;
 	}
+	/*Style for Service at home page*/
 	.homeservices {
-		text-align: center; text-transform: uppercase; max-width: 100%; height: 350px;
+		text-align: center; text-transform: uppercase; margin-bottom: 50px;
 	}
 	.home_book {
-		display: inline-block; padding-right: 30px; 
+		margin-right: 30px; display: inline-block; max-width: 100%; height: auto; 
 	}
 	.home_voucher {
-		display: inline-block; padding-left: 30px; 
+		margin-right: 30px; display: inline-block; max-width: 100%; height: auto;
 	}
 	
-	.Store {
-		padding-left: 25px;
-	}
-	.storecontent {
-		text-align: left;
-		padding-left: 10px; padding-right: 10px;
-	}
-	
-	.featured_meals {
-		width: 650px; background-color: red;
-		height: 650px; display: inline-block;
-	}
-	.featmain {
-		width: 650px; height: 650px; background-color: yellow; display: inline-block;
-	}
-	
-	
-		/*Style for About page*/
+	/*Style for About page*/
 	.aboutheading {
-		 margin-left: 90px;
+		max-width: 100%; max-height: 100%; overflow: hidden;
+	}
+	.banner-about {
+		max-width: 100%; width: 1519px; height: auto;
+	}
+	.aboutpage {
+		 padding-left: 90px;
 	}
 	.textabout {
-		max-height: 100%; max-width: 100%; height: 180px;
-		padding-left: 50px; padding-right: 80px; overflow: hidden;
-		background-color: #f2f2f2;
+		padding-left: 50px; padding-right: 80px;
 	}
 	/*Style for Appetizer menu*/
-	
 	.appetizerbanner { 
-		padding: 0; max-height: 100%; max-width: 100%; position: relative;
+		max-width: 100%; width: 1519px; height: auto;
 	}
-	
 	.menuappetizer {
 		padding-left: 90px;	
 	}
 	#tableappetizer {
 		max-height: 100%; max-width: 100%; overflow: hidden;
-		min-height: 720px; background-color: #f2f2f2;
+		background-color: #f2f2f2; height: auto; margin-bottom: 20px;
 	}
 	.firstcol {
-		float: left; width: 720px; height: 720px; padding-left: 50px;
+		float: left; width: 720px; padding-left: 50px; max-width: 100%; height: auto;
 	}
+	.paua-div {
+		max-width: 100%; height: auto; width: 850px; height: 150px; 
+	}	
 	.pauapic {
 		float: left; margin-bottom: 35px; margin-right: 15px;
-		border-radius: 5px;
+		border-radius: 5px; max-width: 100%; height: auto;
 	}
 	.rwfsh {
 		float: left; 
 	}
 	.rawfishpic {
 		float: left; margin-bottom: 35px; margin-right: 15px;
-		border-radius: 5px;
+		border-radius: 5px;  max-width: 100%; height: auto;
 	}
-	
 	.seafood {
 		float: left;
 	}
 	.seafoodbasketpic {
 		float: left; margin-bottom: 35px; margin-right: 15px;
-		border-radius: 5px;
+		border-radius: 5px; max-width: 100%; height: auto;
 	}
 	.secondcol {
-		float: right; width: 720px;
-		width: 720px; height: 720px; 
+		float: right; width: 720px; max-width: 100%; height: auto;
 	}
 	.coltwo {
 		padding-left: 65px;
@@ -211,186 +206,195 @@ body {
 		float: left;
 	}
 	.breadpic {
-		float: left; margin-bottom: 35px; margin-right: 15px; border-radius: 5px;
+		float: left; margin-bottom: 35px; margin-right: 15px; 
+		border-radius: 5px; max-width: 100%; height: auto;
 	}
 	.Salmon {
 		float: left;
 	}
 	.PoachedSalmonpic {
-		float: left; margin-bottom: 35px; margin-right: 15px;
+		float: left; margin-bottom: 35px; margin-right: 15px; max-width: 100%; height: auto;
 		border-radius: 5px;
-	} /*End of Appetizer Menu*/
+	} /*End style for Appetizer Menu*/
 	
 	
 	/*Style for Menu Main*/
+	.banner-mainmenu {
+		max-width: 100%; width: 1519; height: auto; position: relative;
+	}	
 	.mainmenu {
 		padding-left: 90px; 
 	}
 	.maintable {
-		max-height: 100%; max-width: 100%; height: 800px; overflow: hidden;
+		max-height: 100%; max-width: 100%; height: auto; overflow: hidden;
 		background-color: #f2f2f2;
 	}
 	.mainfirstcol {
-		float: left; width: 720px; height: 800px; padding-left: 40px;
+		float: left; width: 720px; height: 900px; padding-left: 40px;
 	}
 	.fishdaypic {
 			float: left; margin-bottom: 35px; margin-right: 15px;
-			border-radius: 5px;
-	}
-	.musselscallops {
-		float: left; margin-bottom: 35px; margin-right: 15px; 
-	}
-	.musselspic {
-		float: left;  border-radius: 5px;
+			border-radius: 5px; max-width: 100%; height: auto;
 	}
 	.seafoodchowder {
 		float: left; 
 	}
 	.chowderpic {
-		float: left; border-radius: 5px;
+		float: left; margin-bottom: 35px; margin-right: 15px; 
+		border-radius: 5px; max-width: 100%; height: auto;
+	}
+	.musselscallops {
+		float: left;  
+	}
+	.musselspic {
+		float: left;  margin-right: 15px; border-radius: 5px; max-width: 100%; height: auto;
 	}
 	.secondcolumn {
-		float: right; width: 720px; height: 800px; width: 720px; 
+		float: right; max-width: 100%; width: 720px; height: auto; width: 720px; 
 		padding-right: 20px; padding-left: 15px;
 	}
 	.crispyporkpic {
 		float: left; margin-bottom: 35px; margin-right: 15px;
-		border-radius: 5px;
+		border-radius: 5px; max-width: 100%; height: auto;
 	}
 	.lambsteak {
 		float: left;
 	}
 	.lambpic {
 		float: left; margin-bottom: 35px; margin-right: 15px;
-		border-radius: 5px;
+		border-radius: 5px; max-width: 100%; height: auto;
 	}
 	.venison {
 		float: left;
 	}
 	.venisonpic {
 		float: left; margin-bottom: 35px; margin-right: 15px;
-		border-radius: 5px;
+		border-radius: 5px; max-width: 100%; height: auto;
 	}
 	
-	
 	/*Style for Dessert menu*/
+	.banner-dessert {
+		max-width: 100%;  width: 1519px; height: auto;
+	}	
 	.menudessert {
 		padding-left: 90px;
 	}
 	.dessertable {
-		max-height: 100%; max-width: 100%; overflow: hidden; height: 500px;
-		background-color: #f2f2f2;
+		max-width: 100%;  height: auto;overflow: hidden; background-color: #f2f2f2;
 	}
 	.dessert1stcol {
-	 width: 720px; height: 500px; float: left; padding-left: 30px;
+	 width: 720px; height: auto; float: left; padding-left: 30px; margin-bottom: 30px; margin-top: 20px;
 	}
 	.KapitiIceCream {
-		padding-left: 15px;
+		float: left;  margin-bottom: 35px; margin-left: 50px; max-width: 100%; height: auto;
 	}
 	.Kapitipic {
-		float: left; margin-bottom: 35px; margin-right: 15px; 
-		border-radius: 5px;	
+		float: left;  border-radius: 5px; 
+	}
+	.textkapiti {
+		float: left; margin-left: 15px; 
+	}	
+	.steampudding {
+		float: left; margin-left: 15px;
 	}
 	.puddingpic {
-		float: left; border-radius: 5px; 
+		float: left; border-radius: 5px; max-width: 100%; height: auto; 
 	}
-	.steampudding {
-		float: left; padding-left: 15px;
-	}
-	
+	.textsteampudding {
+		float: right; margin-left: 15px; width: 350px;
+	}	
 	.dessert2ndcol {
-		width: 720px; height: 500px; float: right;
+		width: 720px; height: 720px; max-width: 100%; height: auto; 
+		float: right; margin-bottom: 30px; margin-top: 20px;
 	}
 	.pav-lova {
 			float: left;
 	}
 	.pavlovapic {
 		float: left; margin-bottom: 35px; margin-right: 15px;
-		border-radius: 5px;	
+		border-radius: 5px;	max-width: 100%; height: auto;
 	}
 	.banoffeepie {
 		float: left;
 	}
 	.banoffeepic {
-		float: left; border-radius: 5px; 
+		float: left; border-radius: 5px; max-width: 100%;
 	}
 	.bontext {
 		float: right; padding-left: 15px;
 	}
-	
-	
+		
 	/*Style for Beverage page*/
+	.banner-beverage {
+		max-width: 100%; width: 1519px; height: auto; 
+	}	
 	.beveragemenu {
 		padding-left: 90px;
 	}
 	.beveragetable {
-		max-height: 100%; max-width: 100%; overflow: hidden; height: 1250px;
+		max-height: 100%; max-width: 100%; overflow: hidden; height: auto; line-height: 1.4;
 		background-color: #f2f2f2;
 	}
 	.firstcolbeverage {
-	 float: left; padding-left: 70px;
+	 float: left; margin-left: 50px; margin-right: 50px; max-width: 100%; height: auto;
 	}
 	.red-wine {
 		padding-left: 15px;  text-align: justify;
 	}
 	.redwinepic {
-		box-sizing: border-box; margin-top: 10px; border-radius: 8px 8px 8px 8px;
+		margin-top: 10px; border-radius: 8px; max-width: 100%; height: auto;
 	}
 	.white {
 		float: left; padding-right: 15px; text-align: justify;
 	}
 	.whitewinepic {
-		box-sizing: border-box; 
-		 margin-top: 50px;
-		 border-radius: 8px 8px 8px 8px;
+		margin-top: 50px; border-radius: 8px;  max-width: 100%; height: auto;
 	}
 	.secondcolbeverage {
-		float: right; padding-right: 70px;
-	
+		float: right; margin-right: 50px; margin-left: 50px; max-width: 100%; height: auto;
 	}
 	.Beercidarpic {
-	 margin-top: 10px; box-sizing: border-box; border-radius: 8px 8px 8px 8px;
+	 margin-top: 10px; border-radius: 8px; max-width: 100%; height: auto;
 	}
-	
 	.water {
-	 margin-top: 50px; box-sizing: border-box;
-	 border-radius: 8px 8px 8px 8px;	
+		 margin-top: 50px; border-radius: 8px; max-width: 100%; height: auto;	
 	}
-	
-	
 	
 	/* Style Book page (Online booking)*/
 	.booknow {
 		padding-left: 90px;
 	}
 	.onlinebookingtable {
-		background-color: #f2f2f2; max-width: 100%; max-height: 100%;
-		overflow: hidden; height: 1400px;
+		background-color: #f2f2f2; max-width: 100%; height: auto;
+		overflow: hidden;
 	}
-	
-	.forframe {
-		float: left; width: 640px; height: 1483px; 
-		padding-left: 50px; padding-top: 10px;
+	.forframe {  /*Responsive iframe*/
+		float: left; padding-right: 50px; padding-left: 50px; padding-top: 10px; max-width: 100%; height: auto;
 	}
+	.forframe iframe {  /*End of Responsive iframe*/
+		max-width: 100%; max-height: 100%;
+	}
+
 	.secondcolbookpage {
-		float: right; width: 640px; height: 1400px; padding-right: 50px;
+		float: right; padding-right: 50px; margin-left: 50px; max-width: 100%; height: auto;
 	}
 	.h3appbook {
 		padding-left: 25px;
 	}
 	.appetizerbook {
-		width: 625px; height: 200px; border-radius: 8px;
+		width: 625px; height: 200px; border-radius: 8px; max-width: 100%; height: auto; 
 	}
 	.mainbooknow {
-		width: 625px; height: 200px; border-radius: 8px;	
+		width: 625px; height: 200px; border-radius: 8px; max-width: 100%; height: auto;	
 	}
 	.dessertbooknow {
-		width: 625px; height: 200px; border-radius: 8px;	
+		width: 625px; height: 200px; border-radius: 8px; max-width: 100%; height: auto;	
 	}
 	.beveragebook {
-		width: 625px; height: 200px; border-radius: 8px;	
+		width: 625px; height: 200px; border-radius: 8px; max-width: 100%; height: auto;	
 	}
 	
+	/*Style for voucher page*/
 	.voucher {
 		background-color: #f2f2f2; max-height:100% max-width: 100%; 
 	}
@@ -403,41 +407,42 @@ body {
 	
 	/*Style for Contact page*/
 	.contactable {
-		overflow: hidden;
-		max-width: 100%;
-	
+		max-width: 100%; height: auto; background-color: #f2f2f2; overflow: hidden;
 	}
 	.contacus {
 		padding-left: 90px;
 	}
-	.map {
-		float: right;
-		width: 720px;
+	.contactform { /*Responsive contact form*/
+		float: left; padding-left: 50px; padding-right: 50px; max-width: 100%; height: auto;
+	}
+	.contactform iframe { /*End of Responsive contact form*/
+		max-width: 100%; max-height: 100%
+	}
+	.column2contact {
+		float: right; padding-right: 50px; padding-left: 50px; max-width: 100%; height: auto;
+	}
+	/*Column 2 for the map*/
+	.addresstext {
+		text-align: center;
+	}
+	.map iframe {  /*Responsive map iframe*/
 		max-width: 100%;
-	}
-	.contactform {
-		float: left;
-		width: 720px;
 		max-height: 100%;
-		padding-left: 50px;
 	}
 	
-	
-	/*Style for Hours page*/
+		/*Style for Hours page*/
 	.Hours {
 		padding-left: 90px;
 	}
-	
 	
 	/*Style for Calendar page*/
 	.calendar {
 		padding-left: 50px;
 	}
 	
-	
 	/*Style for Privacy page*/
 	.Privacytab {
-		max-width: 100% max-height:100%; background-color: #f2f2f2;
+		max-width: 100%; max-height:100%; background-color: #f2f2f2;
 		padding-left: 40px; padding-right: 40px;
 	}
 	.privacy {
@@ -448,22 +453,33 @@ body {
 	}
 	
 	/*Style for footer*/
-	.footercontainer {
-		background-color: #333; max-width: 100%; height: 80px;
-		margin: 0 auto; padding-top: 10px;
+	footer {
+		max-height: 100%; max-width: 100%; height: 90px; background-color: #333;
+	}	
+	.footernav {
+		text-align: center;
 	}
-	.copyrightext {
-		color: #ccccff; float: left; padding-top: 15px; padding-left: 35px;
+	.footernav li {
+		list-style-type: none; display: inline-block;  margin-right: 20px; margin-top: 15px;
 	}
-	.footerlinks {
-		float: right; list-style-type: none; padding-right: 95px; padding-top: 15px;
+	.footernav li a {
+		text-decoration: none; text-transform: uppercase; color: #ccccff;
 	}
-	
-	.footerlinks li {
-		display: inline-block; padding-left: 20px; 
+	.footernav ul li a:hover {
+		color: #fff;
 	}
-	.footerlinks li a {
-		text-decoration: none; color: #ccccff; text-transform: uppercase;
+	.copyright-footer {
+		color: #ccccff; padding-top: 10px;
 	}
-	
+	@media only screen and (max-width:800px) {
+	 .footernav li {
+		 display: inline-block; margin-right: 5px;
+	 }
+	.footernav li a {
+		position: static;
+		font-size: 12px;
+	}
+	.copyright-footer {
+		font-size: 12px;
+	}
 	
