@@ -5,47 +5,46 @@
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Main Menu Haukai Restaurant</title>
+	<title>Mains Menu-Haukai Restaurant</title>
 </head>
 <!-- This is the Home page display. Header, logo, navigation, banner,-->
 <body>
-	<div class="header">
-		<div class="logo">
-				<a href="index.html"><img src="images/logosmaller.png" alt="logo" max-width="100%"></a>
-		</div>
-		<label for="nav-toggle" class="nav-toggle-label">  <!--This is for the hamberger menu for mobile device-->
-			<div class="line1"></div>
-			<div class="line2"></div>
-			<div class="line3"></div>		
-		</label>
-			<input type="checkbox" id="nav-toggle" class="nav-toggle"/>	 <!--End of hamburger menu-->	
+	<header>
+		<div class="header">
+			<div class="logo" role="banner">
+					<a href="index.html"><img src="images/logosmaller.png" alt="logo" max-width="100%"></a>
+			</div>
+			<label for="nav-toggle" class="nav-toggle-label">  <!--This is for the hamberger menu for mobile device-->
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>		
+			</label>
+			<input type="checkbox" role="checkbox" id="nav-toggle" class="nav-toggle"/>	 <!--End of hamburger menu-->	
 			<nav>
-				<ul>
-					<li><a href="index.html">home</a></li>
-					<li><a href="about.html">about</a></li>
-					<li><a href="#">menu</a>
+					<ul>
+						<li><a href="index.html">home</a></li>
+						<li><a href="about.html">about</a></li>
+						<li><a href="book.html">book</a></li>
+						<li><a href="hours.html"> Hours</a></li>					
+						<li><a href="contact.html">contact</a></li>
+						<li><a href="#">menu</a>
 						<ul>
 							<li><a href="appetizer.html">appetizer</a></li>
 							<li><a href="main.html">main</a></li>
 							<li><a href="dessert.html">dessert</a></li>
 							<li><a href="beverage.html">beverage</a></li>
 						</ul>
-					</li>
-					<li><a href="book.html">book</a></li>
-					<li><a href="voucher.html">voucher</a></li>
-					<li><a href="contact.html">contact</a>
-						<ul>
-							<li><a href="hours.html"> Hours</a></li>
-						</ul>
-					</li>
-				</ul>
+						</li>
+					</ul>
 			</nav>
-	</div> <!--End of header-->
+		</div>
+		<div>
+			<img src="images/main.jpg" role="banner" alt="Menu Mains at Haukai Restaurant">
+		</div>		
+	</header> <!--End of header-->
 
-	<div>
-		<img src="images/main.jpg" alt="Main Menu at Haukai Restaurant">
-	</div>
-	<!--Main Menu-->
+	<main role="main">
+	<!--Mains Menu-->
 	<div class="mainmenu">
 		<h1>Menu</h1>
 		<h2>Main</h2>
@@ -58,20 +57,19 @@
 					<h3>FISH OF THE DAY <font style="color:red">$25.00</font></h3>
 					<p>Beer battered fish and kumara fries, served with a side salad and homemade tartare.</p>
 					
+					<div class="seafoodchowder">
+							<img src="images/SeafoodChowder.jpeg" alt="Seafood Chowder Haukai Restaurant" class="chowderpic" height="200" width="280">
+							<h3>SEAFOOD CHOWDER <font style="color: red">$30.00</font></h3>
+							<p>Creamy chowder filled with terakihi, prawn, hoki, scallops and mussels, served with flatbread.</p>
+						</div>
 					<div class="musselscallops">
 						<img src="images/mussels and scallops.jpg" alt="Main Menu mussels and scallops at Haukai Restaurant" class="musselspic" height="200" width="280">
 						<h3>MUSSELS AND SCALLOPS <font style="color: red">$25.00</font></h3>
 						<p>Steamed mussel and scallop mousse, honey and soy broth.</p>
 					</div>
-
-					<div class="seafoodchowder">
-						<img src="images/SeafoodChowder.jpeg" alt="Seafood Chowder Haukai Restaurant" class="chowderpic" height="200" width="280">
-						<h3>SEAFOOD CHOWDER <font style="color: red">$30.00</font></h3>
-						<p>Creamy chowder filled with terakihi, prawn, hoki, scallops and mussels, served with flatbread.</p>
-					</div>
 				</div> 
 			</div> <!--End of first column-->
-			<div class="secondcolumn"> <!--This is the column-->
+			<div class="secondcolumn"> <!--This is the second column-->
 				<div class="porkbelly">
 					<div>
 						<img src="images/Crispy-Pork-Belly.jpg" alt="Crispy Pork Belly at Haukai Restaurant" class="crispyporkpic" height="200" width="280">
@@ -90,19 +88,20 @@
 					</div>
 				</div>
 			</div> <!--End of second column-->
-		</div> <!--End of table for Menu Main-->
+		</div> <!--End of table for Menu Mains-->
 
 		<!--This is for Footer-->
-		<footer>
-		<div class="footercontainer">
-			<p class="copyrightext">&copy; Copyright 2019 <strong>The Haukai Restaurant</strong>. All rights reserved.</p>
-			<ul class="footerlinks">
-				<li><a href="Index.html" id="homefooter">Home</a></li>
-				<li><a href="about.html" id="aboutfooter">About</a></li>
-				<li><a href="Contact.html" id="contactfooter">Contact</a></li>\
-				<li><a href="Privacy.html" id="privacyfooter">Privacy Policy</a></li>
-			</ul>
-		</div><!--End of Footer-->
-
+		<footer role="contentinfo">
+			<div class="footernav">
+				<ul>
+					<li><a href="Index.html" id="homefooter">Home</a></li>
+					<li><a href="about.html" id="aboutfooter">About</a></li>
+					<li><a href="voucher.html" id="voucherfooter">Voucher</a></li>
+					<li><a href="Contact.html" id="contactfooter">Contact</a></li>
+					<li><a href="Privacy.html" id="privacyfooter">Privacy Policy</a></li>
+				</ul>
+				<p class="copyright-footer">&copy; Copyright 2019 The Haukai Restaurant. All rights reserved.</p>
+			</div>
+		</footer> <!--End of Footer-->
 </body>
 </html>

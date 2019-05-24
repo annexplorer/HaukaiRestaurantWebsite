@@ -4,61 +4,60 @@
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Hours Haukai Restaurant</title>
+	<title>Hours-Haukai Restaurant</title>
 </head>
 <body>
-	<div class="container">
-		<div class="header">
-			<div class="logo">
-				<a href="index.html"><img src="images/logosmaller.png" alt="logo" max-width="100%"></a>
-			</div>
-			<label for="nav-toggle" class="nav-toggle-label">  <!--This is for the hamberger menu for mobile device-->
-				<div class="line1"></div>
-				<div class="line2"></div>
-				<div class="line3"></div>		
-			</label>
-				<input type="checkbox" id="nav-toggle" class="nav-toggle"/>	 <!--End of hamburger menu-->			
-			<nav>
-				<ul>
-					<li><a href="index.html">home</a></li>
-					<li><a href="about.html">about</a></li>
-					<li><a href="#">menu</a>
+	<header>
+		<div class="container">
+			<div class="header">
+				<div class="logo" role="banner">
+					<a href="index.html"><img src="images/logosmaller.png" alt="logo" max-width="100%"></a>
+				</div>
+				<label for="nav-toggle" class="nav-toggle-label">  <!--This is for the hamberger menu for mobile device-->
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>		
+				</label>
+				<input type="checkbox" role="checkbox" id="nav-toggle" class="nav-toggle"/>	 <!--End of hamburger menu-->			
+				<nav>
 					<ul>
-						<li><a href="appetizer.html">appetizer</a></li>
-						<li><a href="main.html">main</a></li>
-						<li><a href="dessert.html">dessert</a></li>
-						<li><a href="beverage.html">beverage</a></li>
-					</ul>
-					</li>
-					<li><a href="book.html">book</a></li>
-					<li><a href="voucher.html">voucher</a></li>
-					<li><a href="contact.html">contact</a>
+						<li><a href="index.html">home</a></li>
+						<li><a href="about.html">about</a></li>
+						<li><a href="book.html">book</a></li>
+						<li><a href="hours.html"> Hours</a></li>					
+						<li><a href="contact.html">contact</a></li>
+						<li><a href="#">menu</a>
 						<ul>
-							<li><a href="hours.html"> Hours</a></li>
+							<li><a href="appetizer.html">appetizer</a></li>
+							<li><a href="main.html">main</a></li>
+							<li><a href="dessert.html">dessert</a></li>
+							<li><a href="beverage.html">beverage</a></li>
 						</ul>
-					</li>
-				</ul>
-			</nav>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</div>
-	</div> <!--End of header-->
-
-	<div class="Hours">
-		<h1> Hours</h1>
-	</div>
-	<div class="calendar">
-		<iframe src="https://calendar.google.com/calendar/embed?src=a6j37jlt2brbnag8gmgdl0092o%40group.calendar.google.com&ctz=Pacific%2FAuckland" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-	</div>
+	</header> <!--End of header-->
+	<main role="main"> <!--This is the main content-->
+		<div class="Hours">
+			<h1> Hours</h1>
+		</div>
+		<div class="calendar">
+			<iframe src="https://calendar.google.com/calendar/embed?src=a6j37jlt2brbnag8gmgdl0092o%40group.calendar.google.com&ctz=Pacific%2FAuckland" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+		</div>
+	</main>
 	<!--This is for Footer-->
-		<footer>
-		<div class="footercontainer">
-			<p class="copyrightext">&copy; Copyright 2019 <strong>The Haukai Restaurant</strong>. All rights reserved.</p>
-			<ul class="footerlinks">
+	<div class="footernav">
+			<ul>
 				<li><a href="Index.html" id="homefooter">Home</a></li>
 				<li><a href="about.html" id="aboutfooter">About</a></li>
-				<li><a href="Contact.html" id="contactfooter">Contact</a></li>\
+				<li><a href="voucher.html" id="voucherfooter">Voucher</a></li>
+				<li><a href="Contact.html" id="contactfooter">Contact</a></li>
 				<li><a href="Privacy.html" id="privacyfooter">Privacy Policy</a></li>
 			</ul>
+		<p class="copyright-footer">&copy; Copyright 2019 The Haukai Restaurant. All rights reserved.</p>
 		</div>
-	</footer><!--End of Footer-->
+	</footer> <!--End of Footer-->
 </body>
 </html>

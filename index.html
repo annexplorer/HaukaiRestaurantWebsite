@@ -8,10 +8,10 @@
 </head>
 <!-- This is the Home page display~ Header, logo, top navigation menu, home page banner or restaurant image and home page contents,-->
 <body>
-	<header role="header">
+	<header>
 		<div class="header">
-			<div class="logo">
-				<a href="index.html"><img src="images/logosmaller.png" alt="logo" max-width="100%"></a>
+			<div class="logo" role="banner">
+				<a href="index.html"><img src="images/logosmaller.png" alt="Logo Haukai Restaurant" max-width="100%"></a>
 			</div>
 			<label for="nav-toggle" class="nav-toggle-label"> <!--This is for the hamberger menu for mobile device-->
 				<div class="line1"></div>
@@ -37,11 +37,12 @@
 				</ul>
 			</nav>
 		</div>
+		<div class="banner-img" role="banner"> <!--Image Banner-->
+			<img src="images/HaukaiRestaurant.jpg" alt="Haukai Restaurant" max-width="100%" >
+		</div>
 	</header> <!--End of header-->
-	<div class="banner-img" role="banner">
-		<img src="images/HaukaiRestaurant.jpg" alt="Haukai Restaurant" max-width="100%" >
-	</div> <!--End of banner-->
-	<main role="content">
+
+	<main role="main"> <!--Home page main content-->
 		<div class="hometable"> <!--table-->
 			<div class="homecontent">
 				<h1 class="welcome">Welcome to Haukai Restaurant</h1>
@@ -81,6 +82,8 @@
 					</div>
 				</div>
 		</div>
+	</main>  <!--End of home page main content-->
+
 	<!--This is for Footer-->	
 	<footer role="contentinfo">
 		<div class="footernav">
