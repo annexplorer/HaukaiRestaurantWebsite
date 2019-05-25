@@ -429,7 +429,7 @@ body {
 		padding-left: 90px;
 	}
 	
-	/*Style for Calendar page*/
+	/*Style for Responsive Calendar page*/
 	.calendar-table {
 		max-width: 100%; height: auto; background-color: #f2f2f2; overflow: hidden;
 	}
