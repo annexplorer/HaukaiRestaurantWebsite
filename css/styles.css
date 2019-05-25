@@ -433,6 +433,12 @@ body {
 	.calendar {
 		padding-left: 50px;
 	}
+	.calendar-frame {
+		text-align: center; padding-top: 20px; padding-bottom: 20px;
+		}
+	.calendar-frame iframe {
+		 max-width: 100%; max-height: 100%;
+	}
 	
 	/*Style for Privacy page*/
 	.Privacytab {
