@@ -430,8 +430,8 @@ body {
 	}
 	
 	/*Style for Calendar page*/
-	.calendar {
-		padding-left: 50px;
+	.calendar-table {
+		max-width: 100%; height: auto; background-color: #f2f2f2; overflow: hidden;
 	}
 	.calendar-frame {
 		text-align: center; padding-top: 20px; padding-bottom: 20px;
