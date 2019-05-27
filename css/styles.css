@@ -90,7 +90,6 @@ body {
 	}
 	.bannerhome {
 		width: 100%;
-		max-width: 1519px;
 		height: auto;
 	}
 	
@@ -147,7 +146,7 @@ body {
 		max-width: 100%; height: auto; margin-bottom: 30px; overflow: hidden;
 	}
 	.banner-about {
-		max-width: 100%; width: 1519px; height: auto;
+		width: 100%; height: auto;
 	}
 	.aboutpage {
 		 padding-left: 90px;
@@ -157,7 +156,7 @@ body {
 	}
 	/*Style for Appetizer menu*/
 	.banner-appetizer { 
-		max-width: 100%; width: 1519px; height: auto;
+		width: 100%; height: auto;
 	}
 	.menuappetizer {
 		padding-left: 90px;	
@@ -214,7 +213,7 @@ body {
 	
 	/*Style for Menu Main*/
 	.banner-mainmenu {
-		max-width: 100%; width: 1519; height: auto; position: relative;
+		width: 100%; height: auto; position: relative;
 	}	
 	.mainmenu {
 		padding-left: 90px; 
@@ -268,7 +267,7 @@ body {
 	
 	/*Style for Dessert menu*/
 	.banner-dessert {
-		max-width: 100%;  width: 1519px; height: auto;
+		width: 100%;  height: auto;
 	}	
 	.menudessert {
 		padding-left: 90px;
@@ -320,7 +319,7 @@ body {
 		
 	/*Style for Beverage page*/
 	.banner-beverage {
-		max-width: 100%; width: 1519px; height: auto; 
+		width: 100%; height: auto; 
 	}	
 	.beveragemenu {
 		padding-left: 90px;
